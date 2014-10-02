@@ -143,7 +143,7 @@
       <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>RARFileSource.res;delayimp.lib;dsound.lib;dxguid.lib;GdiPlus.lib;Psapi.lib;QTMLClient.lib;SetupAPI.lib;UxTheme.lib;Vfw32.lib;Winmm.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>RARFileSource.res;Dwmapi.lib;delayimp.lib;dsound.lib;dxguid.lib;GdiPlus.lib;Psapi.lib;QTMLClient.lib;SetupAPI.lib;UxTheme.lib;Vfw32.lib;Winmm.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\lib\$(Configuration)_$(Platform);$(SolutionDir)lib;$(DXSDK_DIR)Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <DelayLoadDLLs>d3d9.dll;%(DelayLoadDLLs)</DelayLoadDLLs>

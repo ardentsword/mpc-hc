@@ -242,7 +242,7 @@ void CPlayerToolBar::OnCustomDraw(NMHDR* pNMHDR, LRESULT* pResult)
             dc.Attach(pTBCD->nmcd.hdc);
             RECT r;
             GetClientRect(&r);
-            dc.FillSolidRect(&r, ::GetSysColor(COLOR_BTNFACE));
+            dc.FillSolidRect(&r, RGB(0, 0, 0));
             dc.Detach();
         }
         lr |= CDRF_NOTIFYITEMDRAW;
@@ -258,7 +258,7 @@ void CPlayerToolBar::OnCustomDraw(NMHDR* pNMHDR, LRESULT* pResult)
             dc.Attach(pTBCD->nmcd.hdc);
             RECT r;
             GetItemRect(11, &r);
-            dc.FillSolidRect(&r, GetSysColor(COLOR_BTNFACE));
+            dc.FillSolidRect(&r, RGB(0, 0, 0));
             dc.Detach();
             lr |= CDRF_SKIPDEFAULT;
             break;
@@ -314,7 +314,7 @@ void CPlayerToolBar::OnNcPaint() // when using XP styles the NC area isn't drawn
     cr.OffsetRect(-wr.left, -wr.top);
     wr.OffsetRect(-wr.left, -wr.top);
     dc.ExcludeClipRect(&cr);
-    dc.FillSolidRect(wr, GetSysColor(COLOR_BTNFACE));
+    dc.FillSolidRect(wr, RGB(0, 0, 0));
 
     // Do not call CToolBar::OnNcPaint() for painting messages
 
