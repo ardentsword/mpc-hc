@@ -373,6 +373,7 @@
     <ClCompile Include="PlayerStatusBar.cpp" />
     <ClCompile Include="PlayerSubresyncBar.cpp" />
     <ClCompile Include="PlayerToolBar.cpp" />
+    <ClCompile Include="PlayerToolbarBarClassic.cpp" />
     <ClCompile Include="Playlist.cpp" />
     <ClCompile Include="PnSPresetsDlg.cpp" />
     <ClCompile Include="PPageAccelTbl.cpp" />
@@ -506,6 +507,7 @@
     <ClInclude Include="PlayerStatusBar.h" />
     <ClInclude Include="PlayerSubresyncBar.h" />
     <ClInclude Include="PlayerToolBar.h" />
+    <ClInclude Include="PlayerToolbarBarClassic.h" />
     <ClInclude Include="Playlist.h" />
     <ClInclude Include="PnSPresetsDlg.h" />
     <ClInclude Include="PPageAccelTbl.h" />

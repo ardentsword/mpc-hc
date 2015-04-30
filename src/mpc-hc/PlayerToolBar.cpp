@@ -96,15 +96,6 @@ BOOL CPlayerToolBar::Create(CWnd* pParentWnd)
         TBBS_CHECKBOX,
     };
 
-    for (int i = 0; i < _countof(styles); ++i) {
-        // This fixes missing separator in Win 7
-        if (styles[i] & TBBS_SEPARATOR) {
-            SetButtonInfo(i, GetItemID(i), styles[i], -1);
-        } else {
-            SetButtonStyle(i, styles[i] | TBBS_DISABLED);
-        }
-    }
-
     m_volctrl.Create(this);
     m_volctrl.SetRange(0, 100);
 

@@ -435,6 +435,9 @@
     <ClCompile Include="DropTarget.cpp">
       <Filter>Helpers</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerToolbarBarClassic.cpp">
+      <Filter>Toolbars</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppSettings.h">
@@ -814,6 +817,9 @@
     </ClInclude>
     <ClInclude Include="Logger.h">
       <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerToolbarBarClassic.h">
+      <Filter>Toolbars</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

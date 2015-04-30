@@ -88,7 +88,7 @@ bool CMainFrameControls::ShowToolbars(UINT nCS)
         bRecalcLayout = true;
 
         MARGINS mar = { 0 };
-        mar.cyBottomHeight = GetToolbarsHeight(nCS) + 5;
+        mar.cyBottomHeight = GetToolbarsHeight(nCS);
         DwmExtendFrameIntoClientArea(m_pMainFrame->m_hWnd, &mar);
     }
     return bRecalcLayout;

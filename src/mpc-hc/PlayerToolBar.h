@@ -35,12 +35,8 @@ private:
     CMainFrame* m_pMainFrame;
 
     bool IsMuted() const;
-    void SetMute(bool fMute = true);
     int getHitButtonIdx(CPoint point);
-    bool LoadExternalToolBar(CImage* image);
 
-    int m_nButtonHeight;
-    CImageList* m_pButtonsImages;
     int m_volumeMinSizeInc;
 
 public:
@@ -79,4 +75,9 @@ protected:
     afx_msg BOOL OnToolTipNotify(UINT id, NMHDR* pNMHDR, LRESULT* pResult);
     //}}AFX_MSG
     DECLARE_MESSAGE_MAP()
+	void SetMute(bool fMute = true);
+	bool LoadExternalToolBar(CImage* image);
+
+	int m_nButtonHeight;
+	CImageList* m_pButtonsImages;
 };
